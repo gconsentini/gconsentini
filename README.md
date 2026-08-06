@@ -3,7 +3,7 @@
 ## Tech stack
 
 **Backend**
-Kotlin · Spring Boot 3 · Flowable CMMN · gRPC / Protobuf · OpenAPI · PostgreSQL · PostGraphile
+Kotlin · Spring Boot · gRPC / Protobuf · OpenAPI · PostgreSQL · PostGraphile
 
 **Infrastructure & Messaging**
 AWS (SQS, Lambda, IAM) · Docker · Localstack

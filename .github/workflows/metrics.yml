@@ -21,16 +21,21 @@ jobs:
     env:
       HAS_WAKATIME: ${{ secrets.WAKATIME_TOKEN != '' }}
     steps:
-      # Languages across public AND private repositories.
+      # Languages across personal AND organisation repositories.
       #
-      # repositories_affiliations is set to `owner`, so this reads only
-      # repositories Gustavo owns. Org-owned repositories (LendingHome) are
-      # deliberately excluded: publishing language statistics derived from an
-      # employer's private code is a decision to take with the employer first.
+      # Indepth mode clones each repository onto the runner and runs linguist
+      # over `git log` to count only lines Gustavo actually authored. Without
+      # it, including the org would credit him with the whole LendingHome
+      # codebase — the same overstatement the elasticsearch fork produced.
       #
-      # Forks are skipped explicitly. The elasticsearch fork alone is 558 MB of
-      # someone else's Java, which is what made every previous language chart
-      # report Java as the primary language.
+      # Nothing is written to any analysed repository; clones are read-only and
+      # die with the runner. Only aggregate percentages are published.
+      #
+      # Timeouts bound the run: indepth is slow and the org has 100+ repos.
+      # A timeout yields partial analysis rather than a failed workflow.
+      #
+      # Forks are still skipped. The elasticsearch fork alone is 558 MB of
+      # someone else's Java, which is what made every earlier chart report Java.
       - name: Languages
         uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
         with:
@@ -39,9 +44,14 @@ jobs:
           filename: metrics.languages.svg
           base: ""
           config_timezone: America/Sao_Paulo
-          repositories_affiliations: owner
+          repositories_affiliations: owner, organization_member
           plugin_languages: yes
-          plugin_languages_sections: most-used
+          plugin_languages_sections: most-used, recently-used
+          plugin_languages_indepth: yes
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_analysis_timeout_repositories: 7
+          plugin_languages_recent_days: 365
+          plugin_languages_recent_load: 1000
           plugin_languages_categories: programming
           plugin_languages_details: percentage
           plugin_languages_colors: github
@@ -104,3 +114,32 @@ jobs:
           config_timezone: America/Sao_Paulo
           plugin_followup: yes
           plugin_followup_sections: user
+
+      # Isometric commit calendar. Reads the contribution calendar, which
+      # includes private contributions as anonymous totals.
+      - name: Calendar
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: gconsentini
+          filename: metrics.calendar.svg
+          base: ""
+          config_timezone: America/Sao_Paulo
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+      # Coding habits: active hours and days, plus indentation and commit facts.
+      - name: Habits
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: gconsentini
+          filename: metrics.habits.svg
+          base: ""
+          config_timezone: America/Sao_Paulo
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          plugin_habits_trim: yes

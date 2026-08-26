@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=245&section=header&text=Gustavo%20Consentini&fontSize=60&fontColor=21252b&fontAlignY=36&desc=Kotlin%20%C2%B7%20Ruby%20%C2%B7%20TypeScript%20%C2%B7%20and%20whatever%20the%20problem%20needs&descSize=20&descAlignY=58&animation=twinkling&color=0:61afef,100:c678dd" alt="Gustavo Consentini profile header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=245&section=header&text=Gustavo%20Consentini&fontSize=60&fontColor=21252b&fontAlignY=36&desc=Kotlin%20%C2%B7%20Ruby%20%C2%B7%20TypeScript%20%C2%B7%20Distributed%20Systems&descSize=20&descAlignY=58&animation=twinkling&color=0:61afef,100:c678dd" alt="Gustavo Consentini profile header" />
 </p>
 
 <h3 align="center">

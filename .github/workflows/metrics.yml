@@ -46,12 +46,10 @@ jobs:
           config_timezone: America/Sao_Paulo
           repositories_affiliations: owner, organization_member
           plugin_languages: yes
-          plugin_languages_sections: most-used, recently-used
+          plugin_languages_sections: most-used
           plugin_languages_indepth: yes
           plugin_languages_analysis_timeout: 15
           plugin_languages_analysis_timeout_repositories: 7
-          plugin_languages_recent_days: 365
-          plugin_languages_recent_load: 1000
           plugin_languages_categories: programming
           plugin_languages_details: percentage
           plugin_languages_colors: github
@@ -69,6 +67,35 @@ jobs:
             GameJam,
             dontCARE
 
+      # Languages activity (the "recently-used" section), isolated in its own
+      # step and allowed to fail.
+      #
+      # metrics v3.34 crashes here when a loaded event has no commit payload:
+      #   TypeError: Cannot destructure property 'committer' of 'undefined'
+      #   at RecentAnalyzer.patches (plugins/languages/analyzer/recent.mjs:70)
+      # There is no upstream fix — recent.mjs has not changed since Oct 2022.
+      # A narrower event window may avoid the offending event; if it does not,
+      # continue-on-error keeps the failure from taking the other cards down.
+      - name: Languages activity
+        continue-on-error: true
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: gconsentini
+          filename: metrics.languages.activity.svg
+          base: ""
+          config_timezone: America/Sao_Paulo
+          repositories_affiliations: owner, organization_member
+          plugin_languages: yes
+          plugin_languages_sections: recently-used
+          plugin_languages_indepth: yes
+          plugin_languages_analysis_timeout: 10
+          plugin_languages_recent_days: 30
+          plugin_languages_recent_load: 200
+          plugin_languages_categories: programming
+          plugin_languages_colors: github
+          plugin_languages_limit: 8
+
       # Coding time per language, measured in the editor rather than from
       # repository metadata. This is the only source that reflects the Kotlin
       # and Ruby work, because that code lives in the LendingHome org and is
@@ -83,7 +110,7 @@ jobs:
       # renders a card reading "API error: 401" and commits it. Skipping the
       # step entirely is the only way to avoid publishing that.
       - name: WakaTime
-        if: env.HAS_WAKATIME == 'true'
+        if: ${{ !cancelled() && env.HAS_WAKATIME == 'true' }}
         uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
         with:
           token: NOT_NEEDED
@@ -105,6 +132,7 @@ jobs:
       # owns, so it reported vendored node_modules from old side projects as
       # hundreds of thousands of lines written.
       - name: Activity
+        if: ${{ !cancelled() }}
         uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
         with:
           token: ${{ secrets.METRICS_TOKEN }}
@@ -118,6 +146,7 @@ jobs:
       # Isometric commit calendar. Reads the contribution calendar, which
       # includes private contributions as anonymous totals.
       - name: Calendar
+        if: ${{ !cancelled() }}
         uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
         with:
           token: ${{ secrets.METRICS_TOKEN }}
@@ -130,6 +159,7 @@ jobs:
 
       # Coding habits: active hours and days, plus indentation and commit facts.
       - name: Habits
+        if: ${{ !cancelled() }}
         uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
         with:
           token: ${{ secrets.METRICS_TOKEN }}

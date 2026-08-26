@@ -59,7 +59,7 @@ JUnit 5 · Cucumber (BDD) · Playwright
 ## Activity
 
 <p align="center">
-  <img src="./metrics.calendar.png" alt="Isometric commit calendar for the past year" />
+  <img src="./contributions.svg" alt="Isometric contribution calendar: 1,274 contributions across 221 active days" />
 </p>
 
 <p align="center">

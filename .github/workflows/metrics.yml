@@ -74,18 +74,3 @@ jobs:
           config_timezone: America/Sao_Paulo
           plugin_followup: yes
           plugin_followup_sections: user
-
-      # Isometric commit calendar. Reads the contribution calendar, which
-      # includes private contributions as anonymous totals.
-      - name: Calendar
-        if: ${{ !cancelled() }}
-        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: gconsentini
-          filename: metrics.calendar.png
-          config_output: png
-          base: ""
-          config_timezone: America/Sao_Paulo
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year

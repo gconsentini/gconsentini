@@ -62,10 +62,6 @@ JUnit 5 · Cucumber (BDD) · Playwright
   <img src="./contributions.svg" alt="Isometric contribution calendar: 1,274 contributions across 221 active days" />
 </p>
 
-<p align="center">
-  <img src="./metrics.activity.png" alt="Pull request and issue status" />
-</p>
-
 ## Get in touch
 
 [![LinkedIn](https://img.shields.io/badge/linkedin-gconsentini-61afef?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=21252b)](https://br.linkedin.com/in/gconsentini)

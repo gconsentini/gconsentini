@@ -53,7 +53,7 @@ JUnit 5 · Cucumber (BDD) · Playwright
 ## Languages
 
 <p align="center">
-  <img src="./metrics.languages.png" alt="Most used languages across public and private repositories" />
+  <img src="./work-languages.svg" alt="Language mix of the codebase I work in daily: Ruby 38%, Kotlin 20%, TypeScript 13%, HTML 10%, JavaScript 6%, Gherkin 4%" />
 </p>
 
 <p align="center">

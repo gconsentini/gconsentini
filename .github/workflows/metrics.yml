@@ -26,49 +26,6 @@ jobs:
     env:
       HAS_WAKATIME: ${{ secrets.WAKATIME_TOKEN != '' }}
     steps:
-      # Languages across Gustavo's own public and private repositories.
-      #
-      # Including the LendingHome org was tried and does not work. metrics can
-      # count two ways, and neither gives an honest number for that work:
-      #
-      #   - by repository bytes: credits him with the whole company codebase,
-      #     the same overstatement the elasticsearch fork produced
-      #   - indepth mode: attributes only his own commits, but works from push
-      #     events, and GitHub's events API exposes public events only. With
-      #     100 org repositories fetched it found no pushes at all and rendered
-      #     "No push activity found"
-      #
-      # Forks are skipped. The elasticsearch fork alone is 558 MB of someone
-      # else's Java, which is what made every earlier chart report Java.
-      - name: Languages
-        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: gconsentini
-          filename: metrics.languages.png
-          config_output: png
-          base: ""
-          config_timezone: America/Sao_Paulo
-          repositories_affiliations: owner
-          plugin_languages: yes
-          plugin_languages_sections: most-used
-          plugin_languages_categories: programming
-          plugin_languages_details: percentage
-          plugin_languages_colors: github
-          plugin_languages_limit: 8
-          plugin_languages_threshold: 1%
-          plugin_languages_skipped: >-
-            elasticsearch,
-            RO-calculator,
-            calculadoras-ragnarok,
-            learn-react,
-            challenge-bravo,
-            teamsnap-mega-tournament,
-            resume,
-            GordoKore-relay-work,
-            GameJam,
-            dontCARE
-
       # Coding time per language, measured in the editor rather than from
       # repository metadata. This is the only source that reflects the Kotlin
       # and Ruby work, because that code lives in the LendingHome org and is

@@ -62,10 +62,11 @@ jobs:
       # publish employer project names. Languages, time and editors carry no
       # such identifiers.
       #
-      # continue-on-error so the workflow still produces the other cards until
-      # WAKATIME_TOKEN is configured.
+      # Gated on the secret: without a token the plugin does not fail, it
+      # renders a card reading "API error: 401" and commits it. Skipping the
+      # step entirely is the only way to avoid publishing that.
       - name: WakaTime
-        continue-on-error: true
+        if: ${{ secrets.WAKATIME_TOKEN != '' }}
         uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
         with:
           token: NOT_NEEDED
@@ -91,6 +92,7 @@ jobs:
           base: ""
           config_timezone: America/Sao_Paulo
           plugin_lines: yes
-          plugin_lines_sections: base
+          plugin_lines_sections: repositories, history
+          plugin_lines_repositories_limit: 4
           plugin_followup: yes
           plugin_followup_sections: user

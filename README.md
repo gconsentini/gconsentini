@@ -56,6 +56,10 @@ JUnit 5 · Cucumber (BDD) · Playwright
   <img src="./metrics.languages.svg" alt="Most used languages across public and private repositories" />
 </p>
 
+<p align="center">
+  <img src="./metrics.activity.svg" alt="Pull request and issue status" />
+</p>
+
 ## Get in touch
 
 [![LinkedIn](https://img.shields.io/badge/linkedin-gconsentini-61afef?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=21252b)](https://br.linkedin.com/in/gconsentini)

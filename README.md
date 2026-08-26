@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=245&section=header&text=Gustavo%20Consentini&fontSize=60&fontColor=f4efe7&fontAlignY=36&desc=Software%20Engineer%20%E2%80%94%20Distributed%20Systems%20in%20Fintech%20%26amp%3B%20E-commerce&descSize=20&descAlignY=58&animation=twinkling&color=gradient" alt="Gustavo Consentini profile header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=245&section=header&text=Gustavo%20Consentini&fontSize=60&fontColor=21252b&fontAlignY=36&desc=Software%20Engineer%20%E2%80%94%20Distributed%20Systems%20in%20Fintech%20%26amp%3B%20E-commerce&descSize=20&descAlignY=58&animation=twinkling&color=0:61afef,100:c678dd" alt="Gustavo Consentini profile header" />
 </p>
 
 <h3 align="center">
@@ -29,7 +29,7 @@
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=3&section=footer&color=gradient" width="100%" alt="section divider" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=3&section=footer&color=0:61afef,100:c678dd" width="100%" alt="section divider" />
 </p>
 
 <h2 align="center">Technologies &amp; Domains</h2>
@@ -88,7 +88,7 @@
 </table>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=3&section=footer&color=gradient" width="100%" alt="section divider" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=3&section=footer&color=0:61afef,100:c678dd" width="100%" alt="section divider" />
 </p>
 
 <h2 align="center">What I'm Into</h2>
@@ -140,5 +140,5 @@ On the side I build component libraries with React, Tailwind and Storybook: desi
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=95&section=footer&animation=twinkling&color=gradient" alt="profile footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=95&section=footer&animation=twinkling&color=0:61afef,100:c678dd" alt="profile footer" />
 </p>

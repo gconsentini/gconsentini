@@ -50,11 +50,10 @@ JUnit 5 · Cucumber (BDD) · Playwright
   <img src="https://img.shields.io/badge/Infrastructure%20as%20Code-21252b?style=flat-square&labelColor=98c379&color=21252b" alt="Infrastructure as Code" />
 </p>
 
-## Stats
+## Languages
 
 <p align="center">
-  <img height="165" alt="GitHub stats" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=gconsentini&theme=one_dark" />
-  <img height="165" alt="Productive time" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=gconsentini&theme=one_dark&utcOffset=-3" />
+  <img src="./metrics.languages.svg" alt="Most used languages across public and private repositories" />
 </p>
 
 ## Get in touch

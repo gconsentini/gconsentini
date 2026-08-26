@@ -120,7 +120,7 @@ On the side I build component libraries with React, Tailwind and Storybook: desi
 
 <p align="center">
   <img height="165" alt="GitHub stats" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=gconsentini&theme=one_dark" />
-  <img height="165" alt="GitHub streak" src="https://streak-stats.demolab.com?user=gconsentini&hide_border=true&background=21252b&ring=61afef&fire=e06c75&currStreakLabel=98c379&sideLabels=f4efe7&dates=b5aea5&currStreakNum=f4efe7&sideNums=f4efe7" />
+  <img height="165" alt="Productive time" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=gconsentini&theme=one_dark&utcOffset=-3" />
 </p>
 
 <p align="center">

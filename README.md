@@ -53,11 +53,11 @@ JUnit 5 · Cucumber (BDD) · Playwright
 ## Languages
 
 <p align="center">
-  <img src="./metrics.languages.svg" alt="Most used languages across public and private repositories" />
+  <img src="./metrics.languages.png" alt="Most used languages across public and private repositories" />
 </p>
 
 <p align="center">
-  <img src="./metrics.activity.svg" alt="Pull request and issue status" />
+  <img src="./metrics.activity.png" alt="Pull request and issue status" />
 </p>
 
 ## Get in touch

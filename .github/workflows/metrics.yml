@@ -15,6 +15,11 @@ concurrency:
   group: metrics
   cancel-in-progress: true
 
+# Cards are rendered as PNG, not SVG. metrics builds its output entirely from
+# HTML inside <foreignObject> — the language card has 27 <div> elements and
+# zero <text> elements. GitHub serves README images through camo, where the
+# browser loads them in image mode and does not render foreignObject, so the
+# SVGs arrived intact and drew nothing. PNG rasterises that content.
 jobs:
   metrics:
     runs-on: ubuntu-latest
@@ -40,7 +45,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: gconsentini
-          filename: metrics.languages.svg
+          filename: metrics.languages.png
+          config_output: png
           base: ""
           config_timezone: America/Sao_Paulo
           repositories_affiliations: owner
@@ -82,7 +88,8 @@ jobs:
         with:
           token: NOT_NEEDED
           user: gconsentini
-          filename: metrics.wakatime.svg
+          filename: metrics.wakatime.png
+          config_output: png
           base: ""
           config_timezone: America/Sao_Paulo
           plugin_wakatime: yes
@@ -104,7 +111,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: gconsentini
-          filename: metrics.activity.svg
+          filename: metrics.activity.png
+          config_output: png
           base: ""
           config_timezone: America/Sao_Paulo
           plugin_followup: yes
@@ -118,7 +126,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: gconsentini
-          filename: metrics.calendar.svg
+          filename: metrics.calendar.png
+          config_output: png
           base: ""
           config_timezone: America/Sao_Paulo
           plugin_isocalendar: yes

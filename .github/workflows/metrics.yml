@@ -4,11 +4,16 @@ on:
   schedule:
     - cron: "0 6 * * 1"
   workflow_dispatch:
-  push:
-    branches: [main]
 
 permissions:
   contents: write
+
+# The action commits its output, so a push trigger lets one run start while
+# another is still writing. Overlapping runs then race on the same file and
+# fail with "does not match <sha>". Serialise instead.
+concurrency:
+  group: metrics
+  cancel-in-progress: true
 
 jobs:
   metrics:

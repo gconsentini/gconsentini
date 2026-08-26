@@ -119,12 +119,13 @@ On the side I build component libraries with React, Tailwind and Storybook: desi
 <h2 align="center">Stats</h2>
 
 <p align="center">
-  <img height="165" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=gconsentini&show_icons=true&hide_border=true&bg_color=21252b&title_color=61afef&text_color=f4efe7&icon_color=e5c07b&count_private=true" />
+  <img height="165" alt="GitHub stats" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=gconsentini&theme=one_dark" />
   <img height="165" alt="GitHub streak" src="https://streak-stats.demolab.com?user=gconsentini&hide_border=true&background=21252b&ring=61afef&fire=e06c75&currStreakLabel=98c379&sideLabels=f4efe7&dates=b5aea5&currStreakNum=f4efe7&sideNums=f4efe7" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gconsentini&layout=compact&hide_border=true&bg_color=21252b&title_color=61afef&text_color=f4efe7" alt="Top languages" />
+  <img height="165" alt="Top languages by repo" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=gconsentini&theme=one_dark" />
+  <img height="165" alt="Top languages by commit" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=gconsentini&theme=one_dark" />
 </p>
 
 <p align="center">

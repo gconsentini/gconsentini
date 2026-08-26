@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=245&section=header&text=Gustavo%20Consentini&fontSize=60&fontColor=f4efe7&fontAlignY=36&desc=Software%20Engineer%20%E2%80%94%20Distributed%20Systems%20in%20Fintech%20%26%20E-commerce&descSize=20&descAlignY=58&animation=twinkling&color=gradient" alt="Gustavo Consentini profile header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=245&section=header&text=Gustavo%20Consentini&fontSize=60&fontColor=f4efe7&fontAlignY=36&desc=Software%20Engineer%20%E2%80%94%20Distributed%20Systems%20in%20Fintech%20%26amp%3B%20E-commerce&descSize=20&descAlignY=58&animation=twinkling&color=gradient" alt="Gustavo Consentini profile header" />
 </p>
 
 <h3 align="center">

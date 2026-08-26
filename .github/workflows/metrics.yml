@@ -51,3 +51,46 @@ jobs:
             GordoKore-relay-work,
             GameJam,
             dontCARE
+
+      # Coding time per language, measured in the editor rather than from
+      # repository metadata. This is the only source that reflects the Kotlin
+      # and Ruby work, because that code lives in the LendingHome org and is
+      # never read here.
+      #
+      # The `projects` and `projects-graphs` sections are deliberately omitted:
+      # WakaTime derives project names from local directory names, which would
+      # publish employer project names. Languages, time and editors carry no
+      # such identifiers.
+      #
+      # continue-on-error so the workflow still produces the other cards until
+      # WAKATIME_TOKEN is configured.
+      - name: WakaTime
+        continue-on-error: true
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
+        with:
+          token: NOT_NEEDED
+          user: gconsentini
+          filename: metrics.wakatime.svg
+          base: ""
+          config_timezone: America/Sao_Paulo
+          plugin_wakatime: yes
+          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
+          plugin_wakatime_days: 30
+          plugin_wakatime_limit: 6
+          plugin_wakatime_sections: time, languages, editors
+
+      # Lines changed, and open/merged ratio across all pull requests.
+      # Both read private data through METRICS_TOKEN, which is why they show
+      # 496 PRs rather than the single public one hosted services can see.
+      - name: Activity
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: gconsentini
+          filename: metrics.activity.svg
+          base: ""
+          config_timezone: America/Sao_Paulo
+          plugin_lines: yes
+          plugin_lines_sections: base
+          plugin_followup: yes
+          plugin_followup_sections: user

@@ -46,18 +46,8 @@ jobs:
             calculadoras-ragnarok,
             learn-react,
             challenge-bravo,
-            teamsnap-mega-tournament
-
-      # Contribution calendar. This one reflects private work automatically:
-      # GitHub exposes private contributions as anonymous counts when
-      # "Include private contributions on my profile" is enabled, which it is.
-      - name: Calendar
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: gconsentini
-          filename: metrics.calendar.svg
-          base: ""
-          config_timezone: America/Sao_Paulo
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+            teamsnap-mega-tournament,
+            resume,
+            GordoKore-relay-work,
+            GameJam,
+            dontCARE

@@ -82,9 +82,13 @@ jobs:
           plugin_wakatime_limit: 6
           plugin_wakatime_sections: time, languages, editors
 
-      # Lines changed, and open/merged ratio across all pull requests.
-      # Both read private data through METRICS_TOKEN, which is why they show
-      # 496 PRs rather than the single public one hosted services can see.
+      # Open/merged ratio across all pull requests. This reads private data
+      # through METRICS_TOKEN, which is why it counts 105 merged PRs rather
+      # than the single public one hosted services can see.
+      #
+      # The lines plugin was removed: it can only see repositories Gustavo
+      # owns, so it reported vendored node_modules from old side projects as
+      # hundreds of thousands of lines written.
       - name: Activity
         uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
         with:
@@ -93,8 +97,5 @@ jobs:
           filename: metrics.activity.svg
           base: ""
           config_timezone: America/Sao_Paulo
-          plugin_lines: yes
-          plugin_lines_sections: repositories, history
-          plugin_lines_repositories_limit: 4
           plugin_followup: yes
           plugin_followup_sections: user

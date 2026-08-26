@@ -57,11 +57,6 @@ JUnit 5 · Cucumber (BDD) · Playwright
   <img height="165" alt="Productive time" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=gconsentini&theme=one_dark&utcOffset=-3" />
 </p>
 
-<p align="center">
-  <img height="165" alt="Top languages by repo" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=gconsentini&theme=one_dark" />
-  <img height="165" alt="Top languages by commit" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=gconsentini&theme=one_dark" />
-</p>
-
 ## Get in touch
 
 [![LinkedIn](https://img.shields.io/badge/linkedin-gconsentini-61afef?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=21252b)](https://br.linkedin.com/in/gconsentini)

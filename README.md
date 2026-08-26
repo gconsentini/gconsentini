@@ -1,44 +1,32 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=245&section=header&text=Gustavo%20Consentini&fontSize=60&fontColor=21252b&fontAlignY=36&desc=Software%20Engineer%20%E2%80%94%20Distributed%20Systems%20in%20Fintech%20%26amp%3B%20E-commerce&descSize=20&descAlignY=58&animation=twinkling&color=0:61afef,100:c678dd" alt="Gustavo Consentini profile header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=245&section=header&text=Gustavo%20Consentini&fontSize=60&fontColor=21252b&fontAlignY=36&desc=Kotlin%20%C2%B7%20Ruby%20%C2%B7%20TypeScript%20%C2%B7%20and%20whatever%20the%20problem%20needs&descSize=20&descAlignY=58&animation=twinkling&color=0:61afef,100:c678dd" alt="Gustavo Consentini profile header" />
 </p>
 
 <h3 align="center">
   <samp>
-    &gt; Hi, I'm <strong>Gustavo Consentini</strong> — backend-focused engineer who likes owning a service end to end
+    &gt; Hi, I'm <strong>Gustavo</strong> — I collect programming languages the way other people collect records
   </samp>
 </h3>
 
 <p align="center">
-  <samp>From the data model and API design through CI, observability, and production on call.</samp>
+  <samp>Kotlin is the daily driver. Ruby is the one I go back to when I want to enjoy myself.<br>TypeScript is non-negotiable. Python turns up whenever there's data to push around.</samp>
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1200&color=61AFEF&center=true&vCenter=true&width=900&lines=Event-sourced+microservices+in+Kotlin;Ruby+on+Rails+at+fintech+scale;gRPC+%C2%B7+GraphQL+%C2%B7+REST+APIs;TypeScript+%C2%B7+Node+%C2%B7+React;Infrastructure+as+code+on+AWS;Design+systems+%26+UI+engineering" alt="typing introduction" />
-</p>
-
-<p align="center">
-  <a href="https://br.linkedin.com/in/gconsentini"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-gconsentini-61afef?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=21252b"></a>
-  <a href="mailto:gustavoconsentini@gmail.com"><img alt="Email" src="https://img.shields.io/badge/email-gustavoconsentini%40gmail.com-e06c75?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=21252b"></a>
-</p>
-
-<p align="center">
-  <img alt="Kiavi" src="https://img.shields.io/badge/now-Kiavi%20%C2%B7%20loan%20eligibility%20platform-98c379?style=flat-square&labelColor=21252b">
-  <img alt="Experience" src="https://img.shields.io/badge/fintech-Kiavi%20%C2%B7%20Greenlight%20%C2%B7%20PagSeguro%20%C2%B7%20Creditas-61afef?style=flat-square&labelColor=21252b">
-  <img alt="E-commerce" src="https://img.shields.io/badge/e--commerce-Jungle%20Scout%20%C2%B7%20OLX-e5c07b?style=flat-square&labelColor=21252b">
-  <img alt="Education" src="https://img.shields.io/badge/B.S.%20Computer%20Science-University%20of%20S%C3%A3o%20Paulo-c678dd?style=flat-square&labelColor=21252b">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1200&color=61AFEF&center=true&vCenter=true&width=900&lines=Kotlin+and+Spring+Boot+on+the+JVM;Ruby+on+Rails%2C+still+the+fastest+way+to+think;TypeScript+%C2%B7+Node+%C2%B7+React;gRPC+%C2%B7+GraphQL+%C2%B7+REST;Postgres+%C2%B7+Redis+%C2%B7+RabbitMQ;Kubernetes+%C2%B7+Docker+%C2%B7+ArgoCD+%C2%B7+CDK;Design+tokens+and+far+too+much+Storybook" alt="typing introduction" />
 </p>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&height=3&section=footer&color=0:61afef,100:c678dd" width="100%" alt="section divider" />
 </p>
 
-<h2 align="center">Technologies &amp; Domains</h2>
+<h2 align="center">What I Build With</h2>
 
 <table border="0" cellspacing="10" cellpadding="0">
 <tr>
 <td width="50%" valign="top" align="center">
 
-<h3>Technologies</h3>
+<h3>The toolbox</h3>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" width="34" alt="Kotlin" />
@@ -69,19 +57,17 @@
 </p>
 
 </td>
-<td width="50%" valign="top" align="center">
+<td width="50%" valign="top">
 
-<h3>Track Record</h3>
+<h3 align="center">The daily drivers</h3>
 
-<img src="https://img.shields.io/badge/Kiavi-automated%20borrower%20eligibility-98c379?style=for-the-badge&labelColor=21252b" alt="Kiavi" />
-<br><br>
-<img src="https://img.shields.io/badge/Greenlight-investment%20platform%20infra-61afef?style=for-the-badge&labelColor=21252b" alt="Greenlight" />
-<br><br>
-<img src="https://img.shields.io/badge/Jungle%20Scout-team%20lead%2C%20enterprise%20analytics-e5c07b?style=for-the-badge&labelColor=21252b" alt="Jungle Scout" />
-<br><br>
-<img src="https://img.shields.io/badge/PagSeguro-card%20transaction%20systems-e06c75?style=for-the-badge&labelColor=21252b" alt="PagSeguro" />
-<br><br>
-<img src="https://img.shields.io/badge/AWS%20Cape%20Town-SDE%20intern%2C%20EC2-c678dd?style=for-the-badge&logo=amazonwebservices&logoColor=ffffff&labelColor=21252b" alt="AWS internship" />
+<strong>Kotlin</strong> — where I'm most at home. Null safety and coroutines deleted whole categories of bug I used to write in Java, and I've never wanted them back.<br><br>
+
+<strong>Ruby</strong> — the one I reach for when I want to find out whether an idea is any good before lunch. Rails is still unreasonably good at that.<br><br>
+
+<strong>TypeScript</strong> — the type system I argue with most and trust the most. Node on one end, React on the other.<br><br>
+
+<strong>Python</strong> — shows up unannounced whenever there's data to move, and stays for the scripting.
 
 </td>
 </tr>
@@ -91,27 +77,27 @@
   <img src="https://capsule-render.vercel.app/api?type=rect&height=3&section=footer&color=0:61afef,100:c678dd" width="100%" alt="section divider" />
 </p>
 
-<h2 align="center">What I'm Into</h2>
+<h2 align="center">Things I Care About Too Much</h2>
 
 <table>
 <tr>
 <td width="50%" valign="top">
-<strong>Distributed systems in fintech</strong><br>
-At Kiavi I work on the platform that automates borrower eligibility for real-estate loans (credit, background, identity, and risk) across a Ruby on Rails monolith, event-sourced Kotlin microservices, and a GraphQL gateway.
+<strong>Being a polyglot on purpose</strong><br>
+Every language teaches you something the last one couldn't. Kotlin taught me to take nullability seriously, Ruby taught me that developer joy is a real engineering concern, and TypeScript taught me that types are a conversation with future me.
 </td>
 <td width="50%" valign="top">
-<strong>Pulling monoliths apart</strong><br>
-Much of my career (Creditas, Jungle Scout, BRQ) has been spent decomposing monoliths into services and moving infrastructure into code: CDK, Step Functions, ArgoCD, CI/CD pipelines.
+<strong>The plumbing between services</strong><br>
+gRPC and Protobuf when the contract is the point, GraphQL when the client's shape is, plain REST when neither is true. Postgres until it genuinely stops being enough, Redis and RabbitMQ for the bits that shouldn't be synchronous.
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<strong>Owning services end to end</strong><br>
-Data model and API design, upstream clients and persistence, CI and quality gates, observability, documentation, and the on-call that comes with it. Tests first: JUnit 5, Cucumber (BDD), Playwright.
+<strong>Tests I actually trust</strong><br>
+JUnit 5 for the units, Cucumber when the behaviour needs to be readable by someone who isn't me, Playwright for the things that only break in a real browser. A suite you don't believe is worse than no suite.
 </td>
 <td width="50%" valign="top">
-<strong>Design systems &amp; UI engineering</strong><br>
-On the side I build component libraries with React, Tailwind and Storybook: design tokens (W3C format, Style Dictionary), theming, and accessible components.
+<strong>Making buttons look nice</strong><br>
+Genuinely. Component libraries in React and Tailwind, documented in Storybook, with design tokens in the W3C format piped through Style Dictionary. Theming and accessibility are the fun part, not the chore.
 </td>
 </tr>
 </table>
@@ -128,15 +114,15 @@ On the side I build component libraries with React, Tailwind and Storybook: desi
   <img height="165" alt="Top languages by commit" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=gconsentini&theme=one_dark" />
 </p>
 
+<h2 align="center">Say Hi</h2>
+
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=gconsentini&label=PROFILE%20VIEWS&color=61afef&style=flat-square" alt="Profile views" />
+  <samp>Always up for talking about type systems, test strategy, or why your monolith is fine actually.</samp>
 </p>
 
-<h2 align="center">Contact</h2>
-
 <p align="center">
-  <a href="https://br.linkedin.com/in/gconsentini">LinkedIn</a> /
-  <a href="mailto:gustavoconsentini@gmail.com">gustavoconsentini@gmail.com</a>
+  <a href="https://br.linkedin.com/in/gconsentini"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-gconsentini-61afef?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=21252b"></a>
+  <a href="mailto:gustavoconsentini@gmail.com"><img alt="Email" src="https://img.shields.io/badge/email-gustavoconsentini%40gmail.com-e06c75?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=21252b"></a>
 </p>
 
 <p align="center">
